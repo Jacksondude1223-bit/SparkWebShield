@@ -62,7 +62,7 @@ func newAPIClient(config *config.APIConfig) (*APIClient, error) {
 	opts := []ClientOption{
 		WithBaseURL(config.BaseURL),
 		WithTimeout(time.Duration(timeout) * time.Second),
-		WithHeader("User-Agent", "SafeLine-MCP/1.0"),
+		WithHeader("User-Agent", "SparkWebShield-MCP/1.0"),
 		WithInsecureSkipVerify(config.InsecureSkipVerify),
 	}
 

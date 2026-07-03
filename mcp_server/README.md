@@ -1,25 +1,25 @@
-# SafeLine MCP Server
+# SparkWebShield MCP Server
 
-SafeLine MCP Server is an implementation of the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) that provides complete management and control capabilities for SafeLine WAF.
+SparkWebShield MCP Server is an implementation of the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) that provides complete management and control capabilities for SparkWebShield WAF.
 
 [![Docker](https://img.shields.io/badge/Docker-Supported-2496ED?style=flat-square&logo=docker&logoColor=white)](docker-compose.yml)
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat-square&logo=go&logoColor=white)](go.mod)
 
 ## Use Cases
 
-- Automated management and control of SafeLine WAF instances
+- Automated management and control of SparkWebShield WAF instances
 - WAF configuration and policy management through API
 - Building AI-based security protection tools and applications
 
 ## Prerequisites
 
 1. Install [Docker](https://www.docker.com/) (if running in container)
-2. Configure SafeLine API Token (obtained from SafeLine console)
+2. Configure SparkWebShield API Token (obtained from SparkWebShield console)
 
 ## Features
 
 - Complete MCP (Management Control Protocol) server implementation
-- Support for SafeLine WAF instance management and control
+- Support for SparkWebShield WAF instance management and control
 - Flexible configuration system supporting file configuration and environment variables
 - Docker containerization support
 - Secure API communication
@@ -33,8 +33,8 @@ SafeLine MCP Server is an implementation of the [Model Context Protocol (MCP)](h
 | LISTEN_PORT | Service listening port | 5678 | No |
 | LISTEN_ADDRESS | Service listening address | 0.0.0.0 | No |
 | SAFELINE_SECRET | SSE server secret | - | No |
-| SAFELINE_ADDRESS | SafeLine API address | - | Yes |
-| SAFELINE_API_TOKEN | SafeLine API authentication token | - | Yes |
+| SAFELINE_ADDRESS | SparkWebShield API address | - | Yes |
+| SAFELINE_API_TOKEN | SparkWebShield API authentication token | - | Yes |
 
 ### Using Docker
 

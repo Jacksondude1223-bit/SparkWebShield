@@ -3,7 +3,7 @@
 </p>
 
 <h4 align="center">
-  SafeLine - Make your web apps secure
+  SparkWebShield - Make your web apps secure
 </h4>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 ## 👋 INTRODUCTION
 
-SafeLine is a self-hosted **`WAF(Web Application Firewall)`** to protect your web apps from attacks and exploits.
+SparkWebShield is a self-hosted **`WAF(Web Application Firewall)`** to protect your web apps from attacks and exploits.
 
 A web application firewall helps protect web apps by filtering and monitoring HTTP traffic between a web application and the Internet. It typically protects web apps from attacks such as `SQL injection`, `XSS`, `code injection`, `os command injection`, `CRLF injection`, `ldap injection`, `xpath injection`, `RCE`, `XXE`, `SSRF`, `path traversal`, `backdoor`, `bruteforce`, `http-flood`, `bot abused`, among others.
 
@@ -77,7 +77,7 @@ List of the main features as follows:
 
 #### 📦 Installing
 
-Information on how to install SafeLine can be found in the [Install Guide](https://docs.waf.chaitin.com/en/GetStarted/Deploy)
+Information on how to install SparkWebShield can be found in the [Install Guide](https://docs.waf.chaitin.com/en/GetStarted/Deploy)
 
 #### ⚙️ Protecting Web Apps
 
@@ -87,7 +87,7 @@ to see [Configuration](https://docs.waf.chaitin.com/en/GetStarted/AddApplication
 
 #### Effect Evaluation
 
-| Metric            | ModSecurity, Level 1 | CloudFlare, Free     | SafeLine, Balance      | SafeLine, Strict      |
+| Metric            | ModSecurity, Level 1 | CloudFlare, Free     | SparkWebShield, Balance | SparkWebShield, Strict |
 | ----------------- | -------------------- | -------------------- | ---------------------- | --------------------- |
 | Total Samples     | 33669                | 33669                | 33669                  | 33669                 |
 | **Detection**     | 69.74%               | 10.70%               | 71.65%                 | **76.17%**            |
@@ -95,9 +95,9 @@ to see [Configuration](https://docs.waf.chaitin.com/en/GetStarted/AddApplication
 | **Accuracy**      | 82.20%               | 98.40%               | **99.45%**             | 99.38%                |
 
 
-#### Is SafeLine Production-Ready?
+#### Is SparkWebShield Production-Ready?
 
-Yes, SafeLine is production-ready.
+Yes, SparkWebShield is production-ready.
 
 - Over 180,000 installations worldwide
 - Protecting over 1,000,000 Websites
