@@ -19,12 +19,12 @@ import socket
 
 texts = {
     'hello1': {
-        'en': 'SafeLine is a self-hosted WAF(Web Application Firewall) to protect your web apps from attacks and exploits.',
-        'zh': 'SafeLine，中文名 "雷池"，是一款简单好用, 效果突出的 Web 应用防火墙(WAF)，可以保护 Web 服务不受黑客攻击。'
+        'en': 'SparkWebShield is a self-hosted WAF(Web Application Firewall) to protect your web apps from attacks and exploits.',
+        'zh': 'SparkWebShield 是一款简单好用, 效果突出的 Web 应用防火墙(WAF)，可以保护 Web 服务不受黑客攻击。'
     },
     'hello2': {
         'en': 'A web application firewall helps protect web apps by filtering and monitoring HTTP traffic between a web application and the Internet. It typically protects web apps from attacks such as SQL injection, XSS, code injection, os command injection, CRLF injection, ldap injection, xpath injection, RCE, XXE, SSRF, path traversal, backdoor, bruteforce, http-flood, bot abused, among others.',
-        'zh': '雷池通过过滤和监控 Web 应用与互 联网之间的 HTTP 流量来保护 Web 服务。可以保护 Web 服务免受 SQL 注入、XSS 、 代码注入、命令注入、CRLF 注入、ldap 注入、xpath 注入、RCE、XXE、SSRF、路径遍历、后门、暴力破解、CC、爬虫 等攻击。'
+        'zh': 'SparkWebShield 通过过滤和监控 Web 应用与互 联网之间的 HTTP 流量来保护 Web 服务。可以保护 Web 服务免受 SQL 注入、XSS 、 代码注入、命令注入、CRLF 注入、ldap 注入、xpath 注入、RCE、XXE、SSRF、路径遍历、后门、暴力破解、CC、爬虫 等攻击。'
     },
     'talking-group': {
         'en': '\n'
@@ -514,9 +514,9 @@ def init_global_config():
     if args.en:
         LANG = 'en'
         DOMAIN = 'waf.chaitin.com'
-        PRODUCT = 'SafeLine WAF'
+        PRODUCT = 'SparkWebShield WAF'
     else:
-        PRODUCT = '雷池 WAF'
+        PRODUCT = 'SparkWebShield WAF'
 
     if args.debug:
         DEBUG = True
@@ -573,12 +573,12 @@ GLOBAL_ARGS = init_global_config()
 
 def banner():
     t = r'''
-  ______               ___           _____       _                        ____      ____       _        ________
-.' ____ \            .' ..]         |_   _|     (_)                      |_  _|    |_  _|     / \      |_   __  |
-| (___ \_|  ,--.    _| |_    .---.    | |       __    _ .--.    .---.      \ \  /\  / /      / _ \       | |_ \_|
- _.____`.  `'_\ :  '-| |-'  / /__\\   | |   _  [  |  [ `.-. |  / /__\\      \ \/  \/ /      / ___ \      |  _|
-| \____) | // | |,   | |    | \__.,  _| |__/ |  | |   | | | |  | \__.,       \  /\  /     _/ /   \ \_   _| |_
- \______.' \'-;__/  [___]    '.__.' |________| [___] [___||__]  '.__.'        \/  \/     |____| |____| |_____|
+ ____                   _   __        __   _    ____  _     _      _     _
+/ ___| _ __   __ _ _ __| | _\ \      / /__| |__/ ___|| |__ (_) ___| | __| |
+\___ \| '_ \ / _` | '__| |/ /\ \ /\ / / _ \ '_ \___ \| '_ \| |/ _ \ |/ _` |
+ ___) | |_) | (_| | |  |   <  \ V  V /  __/ |_) |__) | | | | |  __/ | (_| |
+|____/| .__/ \__,_|_|  |_|\_\  \_/\_/ \___|_.__/____/|_| |_|_|\___|_|\__,_|
+      |_|
 
 '''.strip('\n')
     print(color(t + '\n', [GREEN, BLINK]))
